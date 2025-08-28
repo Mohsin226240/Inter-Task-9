@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container" aria-label="Primary Navigation">
+            <a href="#hero" class="logo" aria-label="Go to home">Brand<span>Pro</span></a>
+            <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul id="nav-menu" class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#testimonials">Reviews</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#newsletter">Newsletter</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="actions">
+                <button id="themeToggle" class="btn btn-ghost" aria-label="Toggle dark mode">🌙</button>
+                <a href="#pricing" class="btn btn-primary cta-bounce">Buy Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero section container animate-on-scroll">
+            <div class="hero-content">
+                <h1>Meet <span class="accent">BrandPro</span></h1>
+                <p class="subtitle">The all-in-one solution to launch, grow, and scale your product effortlessly.</p>
+                <div class="hero-ctas">
+                    <a href="#pricing" class="btn btn-primary cta-bounce">Get Started</a>
+                    <a href="#features" class="btn btn-secondary">Explore Features</a>
+                </div>
+            </div>
+            <div class="hero-graphic" role="img" aria-label="Illustration of analytics dashboard">
+                <div class="card preview-card">
+                    <div class="card-header">
+                        <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                    </div>
+                    <div class="card-body">
+                        <div class="sparkline"></div>
+                        <div class="stat">
+                            <div class="stat-number">+128%</div>
+                            <div class="stat-label">Growth</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features section container animate-on-scroll">
+            <header class="section-header">
+                <h2>Powerful features to love</h2>
+                <p>Everything you need to build, launch, and scale your business.</p>
+            </header>
+            <div class="features-grid">
+                <article class="feature-card hover-lift">
+                    <div class="icon" aria-hidden="true">⚡</div>
+                    <h3>Blazing Fast</h3>
+                    <p>Optimized performance ensures instant loads and snappy interactions.</p>
+                </article>
+                <article class="feature-card hover-lift">
+                    <div class="icon" aria-hidden="true">🔒</div>
+                    <h3>Secure by Design</h3>
+                    <p>Built-in best practices to keep your data safe and compliant.</p>
+                </article>
+                <article class="feature-card hover-lift">
+                    <div class="icon" aria-hidden="true">🧩</div>
+                    <h3>Modular</h3>
+                    <p>Composable components that adapt to your workflow with ease.</p>
+                </article>
+                <article class="feature-card hover-lift">
+                    <div class="icon" aria-hidden="true">🌍</div>
+                    <h3>Global Ready</h3>
+                    <p>Localization and accessibility out of the box for everyone.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials section container animate-on-scroll">
+            <header class="section-header">
+                <h2>Loved by creators</h2>
+                <p>Real stories from real customers.</p>
+            </header>
+            <div class="testimonials-grid">
+                <figure class="testimonial-card hover-lift">
+                    <blockquote>BrandPro helped us ship 3x faster. The experience is phenomenal.</blockquote>
+                    <figcaption>
+                        <img src="https://i.pravatar.cc/64?img=5" alt="Avatar of Alex Kim" loading="lazy"/>
+                        <div>
+                            <strong>Alex Kim</strong>
+                            <span>Product Lead, NovaTech</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="testimonial-card hover-lift">
+                    <blockquote>Our conversion rate jumped by 40%. Setup took minutes, not weeks.</blockquote>
+                    <figcaption>
+                        <img src="https://i.pravatar.cc/64?img=12" alt="Avatar of Priya Singh" loading="lazy"/>
+                        <div>
+                            <strong>Priya Singh</strong>
+                            <span>Founder, Craftly</span>
+                        </div>
+                    </figcaption>
+                </figure>
+                <figure class="testimonial-card hover-lift">
+                    <blockquote>Best support I've experienced. The team truly cares about success.</blockquote>
+                    <figcaption>
+                        <img src="https://i.pravatar.cc/64?img=22" alt="Avatar of Marcos Diaz" loading="lazy"/>
+                        <div>
+                            <strong>Marcos Diaz</strong>
+                            <span>CTO, Lightwave</span>
+                        </div>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing section container animate-on-scroll">
+            <header class="section-header">
+                <h2>Simple, transparent pricing</h2>
+                <p>Choose a plan that fits your stage.</p>
+            </header>
+            <div class="pricing-grid">
+                <article class="price-card hover-lift">
+                    <h3>Starter</h3>
+                    <p class="price"><span>$</span>9<span class="period">/mo</span></p>
+                    <ul class="features-list">
+                        <li>Basic analytics</li>
+                        <li>Email support</li>
+                        <li>Community access</li>
+                    </ul>
+                    <button class="btn btn-secondary cta-bounce">Choose Starter</button>
+                </article>
+                <article class="price-card featured hover-lift">
+                    <div class="badge">Popular</div>
+                    <h3>Pro</h3>
+                    <p class="price"><span>$</span>29<span class="period">/mo</span></p>
+                    <ul class="features-list">
+                        <li>Advanced analytics</li>
+                        <li>Priority support</li>
+                        <li>Integrations</li>
+                    </ul>
+                    <button class="btn btn-primary cta-bounce">Choose Pro</button>
+                </article>
+                <article class="price-card hover-lift">
+                    <h3>Business</h3>
+                    <p class="price"><span>$</span>79<span class="period">/mo</span></p>
+                    <ul class="features-list">
+                        <li>Unlimited projects</li>
+                        <li>Dedicated manager</li>
+                        <li>Custom SLAs</li>
+                    </ul>
+                    <button class="btn btn-secondary cta-bounce">Choose Business</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section id="newsletter" class="newsletter section container animate-on-scroll">
+            <header class="section-header">
+                <h2>Stay in the loop</h2>
+                <p>Join our newsletter for updates and tips.</p>
+            </header>
+            <form id="newsletterForm" class="newsletter-form" novalidate>
+                <label class="sr-only" for="newsletterEmail">Email</label>
+                <input type="email" id="newsletterEmail" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+                <p class="input-error" id="newsletterError" role="alert" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section container animate-on-scroll">
+            <header class="section-header">
+                <h2>Contact us</h2>
+                <p>We'd love to hear from you. Send us a message.</p>
+            </header>
+            <form id="contactForm" class="contact-form" novalidate>
+                <div class="form-row">
+                    <div class="form-field">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name" required>
+                        <p class="input-error" id="nameError" role="alert" aria-live="polite"></p>
+                    </div>
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                        <p class="input-error" id="emailError" role="alert" aria-live="polite"></p>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="How can we help?" required></textarea>
+                    <p class="input-error" id="messageError" role="alert" aria-live="polite"></p>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="brand">
+                <a href="#hero" class="logo">Brand<span>Pro</span></a>
+                <p>Build better, faster, together.</p>
+            </div>
+            <div class="links">
+                <nav aria-label="Footer">
+                    <a href="#features">Features</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#newsletter">Newsletter</a>
+                </nav>
+            </div>
+            <div class="social">
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="GitHub">💻</a>
+                <a href="#" aria-label="LinkedIn">🔗</a>
+            </div>
+        </div>
+        <div class="container copyright">
+            <small>© <span id="year"></span> BrandPro. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+        <div class="modal-backdrop" data-close></div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-header">
+                <h3 id="modalTitle">Success</h3>
+                <button class="modal-close" aria-label="Close" data-close>×</button>
+            </div>
+            <div class="modal-body" id="modalMessage">Your form was submitted successfully.</div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" data-close>Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
